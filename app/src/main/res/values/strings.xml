@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="tab_text_1">Shopping Lists</string>
+    <string name="tab_text_2">Archived Shopping Lists</string>
+    <string name="shopping_title">shopping title</string>
+    <string name="shopping_time">time</string>
+    <string name="image_description">image of shopping cart</string>
+    <string name="itemname">Item name</string>
+    <string name="itemcount">Item count</string>
+    <string name="additem">Add</string>
+    <string name="finish">Finish</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Shopping list name</string>
+    <string name="BUNDLE">BUNDLE</string>
+    <string name="SHOPPINGLIST">SHOPPINGLIST</string>
+</resources>

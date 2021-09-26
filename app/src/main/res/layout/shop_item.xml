@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutID"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/shopping_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/image_description"
+            android:src="@drawable/ic_add_shopping_cart" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/shopping_image"
+            android:text="@string/shopping_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@id/shopping_image"
+            android:text="@string/shopping_time"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/delete_item"
+            android:layout_width="73dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:contentDescription="@string/image_description"
+            android:src="@drawable/ic_delete_forever" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
