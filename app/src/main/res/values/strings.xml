@@ -13,4 +13,12 @@
     <string name="title">Shopping list name</string>
     <string name="BUNDLE">BUNDLE</string>
     <string name="SHOPPINGLIST">SHOPPINGLIST</string>
+    <string-array name="spinner">
+        <item>items</item>
+        <item>KG</item>
+        <item>dag</item>
+        <item>g</item>
+        <item>l</item>
+        <item>ml</item>
+    </string-array>
 </resources>

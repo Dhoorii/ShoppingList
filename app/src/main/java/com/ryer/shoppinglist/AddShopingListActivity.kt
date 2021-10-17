@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.Spinner
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ryer.shoppinglist.listAdapter.ItemListAdapter
@@ -20,6 +21,7 @@ class AddShopingListActivity : AppCompatActivity() {
     var SHOPPINGLIST : String = "SHOPPINGLIST"
 
     lateinit var itemNameEditText :EditText
+    lateinit var spinner: Spinner
     lateinit var itemCountEditText :EditText
     lateinit var shoppingListTitleEditText :EditText
     lateinit var itemList: ArrayList<ItemListItem>
@@ -28,6 +30,7 @@ class AddShopingListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_shoping_list)
+        spinner = findViewById(R.id.spinner)
         itemNameEditText = findViewById(R.id.editTextName)
         itemCountEditText = findViewById(R.id.editTextItemCount)
         recyclerView = findViewById(R.id.item_list)
@@ -39,7 +42,7 @@ class AddShopingListActivity : AppCompatActivity() {
     fun addItem(view: View) {
         if (!itemNameEditText.text.toString().equals("") && !itemCountEditText.text.toString().equals("")) {
             val shoppingItem =
-                ItemListItem(itemNameEditText.text.toString(), itemCountEditText.text.toString())
+                ItemListItem(itemNameEditText.text.toString(), itemCountEditText.text.toString() +" " + spinner.selectedItem.toString())
             itemList.add(shoppingItem)
             recyclerView.adapter = ItemListAdapter(itemList)
             recyclerView.layoutManager = LinearLayoutManager(this)
